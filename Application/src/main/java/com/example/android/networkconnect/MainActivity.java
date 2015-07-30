@@ -16,13 +16,10 @@
 
 package com.example.android.networkconnect;
 
-import android.app.Service;
 import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.wifi.ScanResult;
-import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -34,7 +31,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
@@ -150,6 +146,8 @@ public class MainActivity extends FragmentActivity {
 //
 //            wifi.setWifiEnabled(true);
 //        }
+
+        BluetoothActivity b = new BluetoothActivity(this.getApplicationContext(), this);
     }
 
     @Override
