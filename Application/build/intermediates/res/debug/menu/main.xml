@@ -25,4 +25,4 @@
         android:showAsAction="ifRoom|withText"
         android:title="@string/show_text" />
 </menu>
-<!-- From: file:/C:/Users/miran_000/Documents/GitHub/NetworkConnect-Xfactor/Application/src/main/res/menu/main.xml -->
+<!-- From: file:/C:/Users/Jhalak/Documents/NetworkConnect-Xfactor/Application/src/main/res/menu/main.xml -->

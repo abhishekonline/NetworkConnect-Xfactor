@@ -116,6 +116,8 @@ public class MainActivity extends FragmentActivity {
         Intent i = new Intent(MainActivity.this, WifiService.class);
         MainActivity.this.startService(i);
 
+        AddressUpdate addressUpdate = new AddressUpdate(this);
+
         //super.onCreate(savedInstanceState);
 
 //        receiver = new BroadcastReceiver() {
