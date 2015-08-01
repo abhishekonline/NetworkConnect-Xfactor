@@ -437,6 +437,15 @@ class AddressResultReceiver extends ResultReceiver {
 
         // Display the address string or an error message sent from the intent service.
         mAddressOutput = resultData.getString(Constants.RESULT_DATA_KEY);
+        LocationData data= LocationData.getInstance();
+        if(mAddressOutput.equals("") && mAddressOutput.equals(homeAddress)){
+            //Zero is home
+            //One in work
+            //2 ins NA
+            data.setStatus(0);
+        }else if(mAddressOutput.equals("") && mAddressOutput.equals(workAddress)){
+             data.setStatus(1);
+        }else data.setStatus(2);
         Log.i("Mad Output YAYAYA",mAddressOutput);
         // displayAddressOutput();
 
