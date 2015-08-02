@@ -35,6 +35,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <!--
   The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but are recommended.
@@ -75,6 +77,7 @@
         <activity
             android:name="com.example.android.networkconnect.List_CAtegoriy"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
             android:uiOptions="splitActionBarWhenNarrow" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -86,6 +89,7 @@
         <service
             android:name="com.example.android.networkconnect.FetchAddressIntentService"
             android:exported="false" />
+        <service android:name="com.example.android.networkconnect.BluetoothService" />
 
         <meta-data
             android:name="com.google.android.gms.version"

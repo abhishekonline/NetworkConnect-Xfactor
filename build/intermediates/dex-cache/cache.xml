@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\classes-c10f71aa5aa3f1fa44faae95278baf2b8ac8c557.jar" />
-    </item>
-    <item
-        jar="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\jars\libs\internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-faa935e75e4104eaab80a20f82e3463a52274b0c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Jhalak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jar="/Users/mirandayang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e0d6042a84de773282ddd3c00e0708ac80232f9f.jar" />
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-0480324c771c0b839789f463c5a341aa42e714f5.jar" />
     </item>
     <item
-        jar="C:\Users\Jhalak\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jar="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-2d1a53586b02466fe362243f5f18e79ef552f3ce.jar" />
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/classes-6c4b7472e1ac5500985e37ede726227e26ffacbf.jar" />
     </item>
     <item
-        jar="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.2\jars\classes.jar"
+        jar="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\classes-5072c32117cca8e4b9c07c2ac79d8d01ccc85eac.jar" />
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/classes-1c28a4506c4fd74f9f3af2c2631fb61311ea6f9d.jar" />
     </item>
     <item
-        jar="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.2\jars\classes.jar"
+        jar="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/21.0.2/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9742ced04aafd9ac97dd2c66c1aa0e32d2ae7e54">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\classes-ded5b2d50f997be9d6732594480399701b394d85.jar" />
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/classes-eca3370d9353c1b5ee768b13370a340e70285aa3.jar" />
     </item>
     <item
-        jar="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\jars\classes.jar"
+        jar="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-e9a971f48e3c5d05bfd40302b1c3b4417bae3e23.jar" />
+    </item>
+    <item
+        jar="/Users/mirandayang/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-2bdc48985668f1bd8b5750729cc671b1d6bd7360.jar" />
+    </item>
+    <item
+        jar="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="C:\Users\Jhalak\Documents\NetworkConnect-Xfactor\Application\build\intermediates\pre-dexed\debug\classes-7d9d4a31bfdd9ddb04ade99920e482c7ad02d3dd.jar" />
+        <dex dex="/Users/mirandayang/Desktop/NetworkConnect-Xfactor/Application/build/intermediates/pre-dexed/debug/classes-c13e35878cbb30a41906c194b6d5f12bc75f81de.jar" />
     </item>
 
 </items>

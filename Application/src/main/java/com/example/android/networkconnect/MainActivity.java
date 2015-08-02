@@ -116,6 +116,9 @@ public class MainActivity extends FragmentActivity {
         Intent i = new Intent(MainActivity.this, WifiService.class);
         MainActivity.this.startService(i);
 
+        Intent btIntent = new Intent(MainActivity.this, BluetoothService.class);
+        MainActivity.this.startService(btIntent);
+
         AddressUpdate addressUpdate = new AddressUpdate(this);
 
         //super.onCreate(savedInstanceState);
@@ -149,7 +152,6 @@ public class MainActivity extends FragmentActivity {
 //            wifi.setWifiEnabled(true);
 //        }
 
-        BluetoothActivity b = new BluetoothActivity(this.getApplicationContext(), this);
     }
 
     @Override
