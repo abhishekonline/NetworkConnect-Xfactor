@@ -58,7 +58,7 @@ public class List_CAtegoriy extends Activity {
             @Override
             public void run() {
                 int i=0;
-                while(i<5) {
+                while(i<packages.size()) {
                     try {
                         Thread.sleep(5000);
                     } catch (InterruptedException e) {
