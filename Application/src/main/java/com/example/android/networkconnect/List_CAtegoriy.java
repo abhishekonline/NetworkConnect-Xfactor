@@ -16,6 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -45,48 +46,6 @@ public class List_CAtegoriy extends Activity {
 
         final CategoryTable values = new CategoryTable();
 
-
-
-        //display the list of package names along with category
-        listView = (ListView) findViewById(R.id.list);
-
-
-        String[] values_of_list;
-        List<String> l = new ArrayList<String>();
-        FileInputStream fis = null;
-        try {
-            Log.d("AAAAAAAAAAAAAAAAAAAAA","entererd");
-            fis = openFileInput("category.txt");
-            ObjectInputStream is = new ObjectInputStream(fis);
-            CategoryTable simpleClass = (CategoryTable) is.readObject();
-
-            String s="";
-            for (Map.Entry entry : simpleClass.table.entrySet()) {
-                l.add("package:" + entry.getKey() +"\n"+ "Category:" + entry.getValue());
-                Log.d("----read from file----", "package:" + entry.getKey() + "Category:" + entry.getValue());
-                s="package name:" + entry.getKey() + "value name:" + entry.getValue()+"\n";
-            }
-            is.close();
-            fis.close();
-        } catch (Exception e) {
-            Log.d("AAAAAAAAAAAAAAAAAAAAA","exception");
-            e.printStackTrace();
-        }
-        values_of_list=l.toArray(new String[l.size()]);
-
-
-
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values_of_list);
-        listView.setAdapter(adapter);
-
-
-
-
-
-
-
         //retrieve a list of all packages currently on the phone
         RetrievePackages r = new RetrievePackages(this);
         final List<String> packages = r.getPackages();
@@ -99,7 +58,7 @@ public class List_CAtegoriy extends Activity {
             @Override
             public void run() {
                 int i=0;
-                while(i<packages.size()) {
+                while(i<5) {
                     try {
                         Thread.sleep(5000);
                     } catch (InterruptedException e) {
@@ -120,19 +79,19 @@ public class List_CAtegoriy extends Activity {
 
 
 
-                FileInputStream fis = openFileInput("category.txt");
-                ObjectInputStream is = new ObjectInputStream(fis);
-                CategoryTable simpleClass = (CategoryTable) is.readObject();
-
-                    String s="";
-                    for (Map.Entry entry : simpleClass.table.entrySet()) {
-                        Log.d("----read from file----", "package name:" + entry.getKey() + "value name:" + entry.getValue());
-                        s="package name:" + entry.getKey() + "value name:" + entry.getValue()+"\n";
-                    }
-
-
-                    is.close();
-                fis.close();
+//                    FileInputStream fis = openFileInput("category.txt");
+//                    ObjectInputStream is = new ObjectInputStream(fis);
+//                    CategoryTable simpleClass = (CategoryTable) is.readObject();
+//
+//                    String s="";
+//                    for (Map.Entry entry : simpleClass.table.entrySet()) {
+//                        Log.d("----read from file----", "package name:" + entry.getKey() + "value name:" + entry.getValue());
+//                        s="package name:" + entry.getKey() + "value name:" + entry.getValue()+"\n";
+//                    }
+//
+//
+//                    is.close();
+//                    fis.close();
 
 
                 } catch (Exception e) {
@@ -141,7 +100,61 @@ public class List_CAtegoriy extends Activity {
 
             }
         });
-        t.start();//
+
+
+
+        //display the list of package names along with category
+        listView = (ListView) findViewById(R.id.list);
+
+
+        String[] values_of_list;
+        List<String> l = new ArrayList<String>();
+        try{
+            readFile(l);
+        }catch(IOException e){
+            t.start();
+        }
+        values_of_list=l.toArray(new String[l.size()]);
+
+
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, values_of_list);
+        listView.setAdapter(adapter);
+
+
+
+
+
+
+    }
+
+    private void readFile(List<String> l) throws IOException{
+
+        FileInputStream fis = null;
+       try {
+           Log.d("AAAAAAAAAAAAAAAAAAAAA", "entererd");
+           fis = openFileInput("category.txt");
+           ObjectInputStream is = new ObjectInputStream(fis);
+           CategoryTable simpleClass = (CategoryTable) is.readObject();
+           String s = "";
+
+
+           for (Map.Entry entry : simpleClass.table.entrySet()) {
+               l.add("package:" + entry.getKey() + "\n" + "Category:" + entry.getValue());
+               Log.d("----read from file----", "package:" + entry.getKey() + "Category:" + entry.getValue());
+               s = "package name:" + entry.getKey() + "value name:" + entry.getValue() + "\n";
+           }
+           is.close();
+           fis.close();
+       }
+        catch(ClassNotFoundException e){
+            Log.d("class not found ","class not found exception");
+        }
+
+
+
     }
 
     @Override
@@ -167,5 +180,31 @@ public class List_CAtegoriy extends Activity {
         //}
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        //display the list of package names along with category
+        listView = (ListView) findViewById(R.id.list);
+
+
+        String[] values_of_list;
+        List<String> l = new ArrayList<String>();
+        try{
+            readFile(l);
+        }catch(IOException e){
+        }
+        values_of_list=l.toArray(new String[l.size()]);
+
+
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, values_of_list);
+        listView.setAdapter(adapter);
+
+
     }
 }

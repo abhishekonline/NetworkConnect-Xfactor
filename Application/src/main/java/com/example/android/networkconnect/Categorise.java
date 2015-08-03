@@ -49,7 +49,7 @@ public class Categorise {
         String parameters = "p="+packagename;
 
         // Building the url to the web service
-        String url = "https://42matters.com/api/1/apps/lookup.json?access_token=dab674a1942df1714f8d38dbc2af5cf469a681e6&"+parameters;
+        String url = "https://42matters.com/api/1/apps/lookup.json?access_token=1757d1549f167798cfb7441478ab96694cebf92a&"+parameters;
 
         Log.d("response is :", url);
 
